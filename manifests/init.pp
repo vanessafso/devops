@@ -38,11 +38,11 @@ class devops (
     recurse => true,
   }
 
-  file { 'teste':
+  file { 'frontend':
     ensure  => present,
-    path    => "${apache_path}/teste",
+    path    => "${apache_path}/frontend",
     mode    => '0755',
-    source  => 'puppet:///modules/devops/teste',
+    source  => 'puppet:///modules/devops/frontend',
     recurse => true,
   }
 
